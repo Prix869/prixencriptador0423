@@ -1,0 +1,92 @@
+body {
+    width: auto;
+    background-color: #030303;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  #contenedor {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 20px;
+    display: inline-block;
+  }
+
+  h1 {
+    font-family: 'Bruno Ace', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  textarea {
+    background-color: #373636;
+    border-color: #ffffff;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+  }
+
+  button {
+    background-color: #4e0c9f;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    padding-left: 10px;
+    background-color: #f9525b;
+  }
+
+  #textoInicial {
+    margin-bottom: 20px;
+  }
+
+  #resultadoFinal {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  #copiado {
+    position: absolute;
+    right: -100px;
+    top: 10px;
+    background-color: #3fc153;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+    transform: translateX(100px);
+  }
+
+  #copiado.mostrado {
+    transform: translateX(0);
+  }
+
+  #copiado::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    border-top: 10px solid transparent;
+    border-right: 20px solid #3fc153;
+    border-bottom: 10px solid transparent;
+  }
+
+  footer{
+    text-align: center;
+  }
