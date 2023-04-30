@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversión</title>
+    <link rel="shortcut icon" href="images/iconoEncriptar.png">
+    <link rel="stylesheet" href="css/styless.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+</head>
+
+<body background="images/fondo-body.jpg">
+
+    <div id="contenedor">
+        <h1>Encriptador</h1>
+
+        <div>
+            <textarea id="textoInicial" placeholder="Escribe aquí tu texto"></textarea>
+        </div>
+
+
+        <div class="botones">
+            <button onclick="encriptar()">Encriptar texto</button>
+            <button onclick="copiar()">Copiar encriptado</button>
+            <button onclick="desencriptar()">Desencriptar</button>
+            <button onclick="borrar()">Limpiar texto</button>
+        </div>
+
+        <div class="caja">
+            <textarea id="resultadoFinal" placeholder="Aquí aparecerá el texto encriptado"></textarea>
+        </div>
+
+
+        <div id="copiado">¡Copiado al portapapeles!</div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <footer>
+        Desafio desarrollado por <strong>Priscila Gutierrez &copy;</strong>
+    </footer>
+
+</body>
+
+</html>
